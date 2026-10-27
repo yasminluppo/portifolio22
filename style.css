@@ -1,0 +1,43 @@
+:root {
+    --bg: #ffffff;
+    --texto: #333333;
+    --primaria: #0076ff;
+}
+
+[data-theme="dark"] {
+    --bg: #121212;
+    --texto: #ffffff;
+    --primaria: #bb86fc;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+a { color: var(--primaria); text-decoration: none; }
+section { margin-bottom: 40px; padding: 10px; border-bottom: 1px solid #ccc; }
+
+.card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Responsividade Básica */
+@media (max-width: 600px) {
+    header nav { flex-direction: column; align-items: flex-start; }
+}

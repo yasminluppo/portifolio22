@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#tcc">TCC</a>
+            <a href="#projetos">Projetos</a>
+            <button id="btn-tema">Mudar Tema</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h1>Yasmin Pereira Luppo</h1>
+            <p>Estudante de Desenvolvimento de Sistemas.</p>
+            <h3>Habilidades:</h3>
+            <p>HTML, CSS, JavaScript, Git e GitHub.</p>
+            <p>Contato: <a href="mailto:"mailto:seuemail@provedor.com>00001136137282sp@al.educacao.sp.gov.br</a> | <a href="https://github.com/yasminluppo" target="_blank">GitHub</a></p>
+        </section>
+
+        <section id="tcc">
+            <h2>Projeto de TCC</h2>
+            <p><strong>Problema:</strong>O projeto SAFEWAY foi idealizado para mitigar os problemas diários de mobilidade urbana enfrentados pela população de Osasco, como congestionamentos frequentes, atrasos no transporte público e a escassez de informações organizadas e atualizadas sobre as linhas de ônibus.</p>
+            <p><strong>Objetivo:</strong>O objetivo geral do sistema é criar uma plataforma tecnológica acessível que facilite o planejamento de rotas e centralize dados de transporte, permitindo que os moradores escolham trajetos mais eficientes e participem de um ambiente colaborativo por meio do envio de avaliações sobre as condições das viagens.</p>
+            <p><strong>Funcionalidade:</strong>A aplicação web traz funcionalidades práticas como a consulta de linhas por origem e destino ou pelo número do ônibus, a seleção do sentido de ida ou volta, a visualização do trajeto detalhado e dos pontos de parada em um mapa interativo, além de recursos de geolocalização do usuário, espaço para cadastro e login, uma área administrativa para gerenciar os feedbacks enviados pela comunidade e um planejamento futuro para recomendar as melhores rotas com base nas notas dadas pelos próprios passageiros.</p>
+        </section>
+
+        <section id="projetos">
+            <h2>Meus Projetos (GitHub API)</h2>
+            <div id="loading">Carregando projetos...</div>
+            <div id="error-msg" style="display: none; color: red;">
+                Erro ao carregar projetos. <button onclick="carregarProjetos()">Tentar Novamente</button>
+            </div>
+            <div id="lista-projetos"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
